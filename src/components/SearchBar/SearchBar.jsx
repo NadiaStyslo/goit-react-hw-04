@@ -3,12 +3,15 @@
 const SearchBar = () => {
     const handleSumbit = evt => {
         evt.preventDefault()
+        // console.log(evt.target.elements.qeury.value)
+        evt.target.reset()
     }
     return (
      <header>
-  <form onSumbit = {handleSumbit} >
+  <form onSubmit = {handleSumbit} >
     <input
                     type="text"
+                    name ="qeury"
                     
     //   autocomplete="off"
     //   autofocus
