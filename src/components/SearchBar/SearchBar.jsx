@@ -1,9 +1,11 @@
 // import css from './SearchBar.module.css'
+import toast from "react-hot-toast"
 
-const SearchBar = () => {
+const SearchBar = ({onSearch}) => {
     const handleSumbit = evt => {
         evt.preventDefault()
-        // console.log(evt.target.elements.qeury.value)
+        // console.log(evt.target.elements.query.value)
+        onSearch(evt.target.elements.query.value)
         evt.target.reset()
     }
     return (
@@ -11,11 +13,11 @@ const SearchBar = () => {
   <form onSubmit = {handleSumbit} >
     <input
                     type="text"
-                    name ="qeury"
+                    name ="query"
                     
     //   autocomplete="off"
     //   autofocus
-    //   placeholder="Search images and photos"
+      placeholder="Search images and photos"
     />
     <button type="submit">Search</button>
   </form>
