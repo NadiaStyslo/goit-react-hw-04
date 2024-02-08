@@ -1,7 +1,14 @@
-import css from './Lodear.module.css'
-
-const Lodear = () => {
-    // return()
+import css from './Loader.module.css'
+import {FallingLines} from 'react-loader-spinner'
+const Loadear = () => {
+    return (
+         <FallingLines
+  color="#ed4b4b"
+  width="100"
+  visible={true}
+  ariaLabel="falling-circles-loading"
+  />)
+     
 }
 
-export default Lodear
+export default Loadear

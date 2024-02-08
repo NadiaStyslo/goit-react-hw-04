@@ -1,4 +1,5 @@
 import css from './ImageCard.module.css'
+import ImageModal from '../ImageModal/ImageModal'
 
 const ImageCard = ({item:{urls, alt_description}}) => {
     return (

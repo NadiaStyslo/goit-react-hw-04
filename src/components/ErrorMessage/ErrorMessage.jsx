@@ -1,6 +1,4 @@
 import css from './ErrorMessage.module.css'
 
-const ErrorMessage = () => {
-    // return()
-}
+const ErrorMessage = () => <b>We are sorry!!!</b>
 export default ErrorMessage

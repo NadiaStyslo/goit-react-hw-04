@@ -7,7 +7,7 @@ const fetchArticles = async (query, page) => {
      params: {
                 page,
             query,
-            per_page: "50"
+            per_page: "20"
         },
     });
     return response.data;
