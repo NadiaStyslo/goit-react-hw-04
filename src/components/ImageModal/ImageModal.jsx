@@ -20,10 +20,13 @@ const ImageModal = ({urls,description, modalIsOpen, modalClose }) => {
         <Modal
             isOpen={modalIsOpen}
             onRequestClose={modalClose}
-            styles={customStyles}>
-            <img 
-                src={urls}   
-                alt={description} />
+        styles={customStyles}>
+        <div>
+          <img
+                src={urls.regular}   
+          alt={description}
+          width={500}/>
+          </div>
             </Modal>
     )
 }
