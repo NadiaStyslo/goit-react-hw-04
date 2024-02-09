@@ -36,11 +36,10 @@ setQuery(`${Date.now()}/${newQuery}`);
               try {
            setError(false)
                   setLoading(true)
-                  setBtn(true)
+                
                   const response = await fetchArticles(query.split('/')[1], page);
-                  if (page === 1 && response.length === 0) {
-                      setBtn(false)
-                  } 
+                
+                  setBtn(response.total_pages !== page)
             setImage(prevImage =>[...prevImage, ...response.results])
            setLoading(false)
        } catch (error) {

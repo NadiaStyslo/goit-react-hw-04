@@ -1,10 +1,11 @@
 import css from './ImageCard.module.css'
-import ImageModal from '../ImageModal/ImageModal'
 
-const ImageCard = ({item:{urls, alt_description}}) => {
+
+
+const ImageCard = ({item:{urls, description}}) => {
     return (
-        <div>
-  <img src={urls.small} alt={alt_description} width="400"/>
+        <div className={css.list}>
+            <img className={css.img} src={urls.small} alt={description} />
 </div>
 
     )
