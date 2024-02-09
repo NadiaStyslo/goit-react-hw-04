@@ -19,7 +19,7 @@ const ImageCard = ({ item }) => {
                 alt={item.description}
                 onClick={openModal} />
             <ImageModal modalIsOpen={modalIsOpen}
-                item={item}
+                urls={item.urls}
                 modalClose={closeModal} />
         </div>
 
